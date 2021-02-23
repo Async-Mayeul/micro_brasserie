@@ -12,35 +12,14 @@ body {
 }
 
 header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     color: white;
     background-color: #0e0d0d;
     font-family: 'diner-fattregular';
     font-size: 1.5em;
-}
-
-header > * {
-    display: inline-block;
-}
-
-h1 {
-    margin: 0px;
-}
-nav {
-    width: 100%;
-}
-
-ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style-type: none;
-    width: 50%;
-    margin: auto;
-    padding: 0px;
-}
-
-li {
-    height: 20%;
+    height: 25vh;
 }
 
 header a {
@@ -48,6 +27,31 @@ header a {
     text-decoration: none;
 }
 
-nav > ul > li {
-    align-self: center;
+#logo {
+    height: 100px;
 }
+
+img {
+    max-width: 100%;
+}
+
+nav {
+    align-self: flex-end;
+    width: 60%;
+    height: 1.5em;
+    margin-right: 20%;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav > ul > li {
+    letter-spacing: 2px;
+}
+
+
