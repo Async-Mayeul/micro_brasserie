@@ -7,19 +7,22 @@
     font-weight: normal;
     font-style: normal;
 }
-body {
-    margin: 0px;
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     color: white;
     background-color: #0e0d0d;
     font-family: 'diner-fattregular';
     font-size: 1.5em;
-    height: 25vh;
+    height: 15vh;
+    width: 100%;
 }
 
 header a {
@@ -27,19 +30,23 @@ header a {
     text-decoration: none;
 }
 
-#logo {
-    height: 100px;
+h1 {
+    height: 1em;
+    position: relative;
+    top: 10%;
+    left: 30%;
 }
 
-img {
+header > img {
+    position: relative;
+    right: 350px;
     max-width: 100%;
 }
 
 nav {
     align-self: flex-end;
-    width: 60%;
+    width: 50%;
     height: 1.5em;
-    margin-right: 20%;
 }
 
 nav > ul {
@@ -47,10 +54,10 @@ nav > ul {
     flex-direction: row;
     justify-content: space-between;
     list-style-type: none;
-    margin: 0;
 }
 
 nav > ul > li {
+    margin-right: 5%;
     letter-spacing: 2px;
 }
 
