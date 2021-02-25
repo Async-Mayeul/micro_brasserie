@@ -7,6 +7,7 @@
     font-weight: normal;
     font-style: normal;
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
     margin: 0;
@@ -61,4 +62,57 @@ nav > ul > li {
     letter-spacing: 2px;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
 
+article {
+    margin-bottom: 10%;
+}
+
+article:nth-child(1){
+    align-self: flex-start;
+    display: inherit;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: 5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+article:nth-child(1) > section {
+    display: inherit;
+    flex-direction: column;
+    justify-content: left;
+    border-right: 3px solid black;
+    margin-right: 10px;
+    padding: 1em;
+}
+
+article:nth-child(2) {
+    align-self: center;
+    display: inherit;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+article:nth-child(3) {
+    align-self: flex-start;
+    margin-left: 5%;
+    display: inherit;
+    flex-direction: column;
+}
+
+article:nth-child(3) > ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: block;
+    height: 100px;
+}
+
+ul li img {
+    vertical-align: middle;
+}
