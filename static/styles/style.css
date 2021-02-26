@@ -9,6 +9,7 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+/* Base style */
 * {
     margin: 0;
     padding: 0;
@@ -37,6 +38,7 @@ h4 {
     text-align: center;
 }
 
+/* Header style */
 header {
     display: flex;
     flex-direction: row;
@@ -49,12 +51,14 @@ header {
     width: 100%;
 }
 
+/* Logo style */
 header > img {
     position: relative;
     right: 350px;
     max-width: 100%;
 }
 
+/* menu style */
 nav {
     align-self: flex-end;
     width: 50%;
@@ -82,6 +86,7 @@ nav a:hover {
     color: #f4c315;
 }
 
+/* add flex to main to align content */
 main {
     display: flex;
     flex-direction: column;
@@ -91,10 +96,12 @@ main {
     color: ivory;
 }
 
+/* Separate article */
 article {
     margin-bottom: 10%;
 }
 
+/* article style localisation */
 article:nth-child(1){
     align-self: flex-start;
     display: inherit;
@@ -114,6 +121,7 @@ article:nth-child(1) > section {
     padding: 1em;
 }
 
+/* Style A propos article */
 article:nth-child(2) {
     background-color: #323132;
     background-size: 100%;
@@ -125,9 +133,17 @@ article:nth-child(2) {
 }
 
 article:nth-child(2) > section {
+    text-align: top;
     margin-right: 20%;
 }
 
+article:nth-child(2) > section::before {
+    content: "❝";
+    position: relative;
+    left: -10%;
+    font-size: 40px;
+}
+/* Style Nous contacter article */
 article:nth-child(3) {
     align-self: flex-start;
     margin-left: 5%;
@@ -149,6 +165,7 @@ article:nth-child(3) > ul > li > a:hover {
     padding: 0.5em;
 }
 
+/* Footer Style */
 footer {
     height: 15vh;
     display: flex;
@@ -159,33 +176,40 @@ footer {
     color: ivory;
 }
 
+/* Footer content style */
 aside {
     width: 33.3%;
 }
 
+/* List element style */
+aside li {
+    margin-bottom: 3%;
+}
+
+/* First aside style 
+center the content */
 aside:nth-child(1) {
     display: inherit;
     flex-direction: column;
     align-items: center;
 }
 
+/* Style link when cursor hover link */
+aside:nth-child(1) a:hover {
+    border-left: 3px solid rgb(0, 204, 0);
+    padding: 0.5em;
+}
+
+/* Second aside style 
+There images allowed to styling border left and right of the aside */
 aside:nth-child(2) {
     background-image: url(../images/sep.png), url(../images/sep.png);
     background-repeat: no-repeat no-repeat;
     background-position: left center, right center;
 }
-
+/* Third aside style, we juste style the list */
 aside:nth-child(3) ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
-
-aside li {
-    margin-bottom: 3%;
-}
-
-aside:nth-child(1) a:hover {
-    border-left: 3px solid rgb(0, 204, 0);
-    padding: 0.5em;
 }
