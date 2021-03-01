@@ -98,6 +98,7 @@ section {
     width: 50%;
     font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 5%;
+    margin-bottom: 10%;
     padding: 1%;
     display: flex;
     justify-content: center;
@@ -117,4 +118,53 @@ img[src="../images/grande_sep.png"] {
 
 section:nth-child(odd) {
     background-color: rgba(50, 49, 50, 0.6);
+}
+
+/* Footer Style */
+footer {
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #323132;
+    font-family: 'Roboto', sans-serif;
+    color: ivory;
+}
+
+/* Footer content style */
+aside {
+    width: 33.3%;
+}
+
+/* List element style */
+aside li {
+    margin-bottom: 3%;
+}
+
+/* First aside style 
+center the content */
+aside:nth-child(1) {
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style link when cursor hover link */
+aside:nth-child(1) a:hover {
+    border-left: 3px solid rgb(0, 204, 0);
+    padding: 0.5em;
+}
+
+/* Second aside style 
+There images allowed to styling border left and right of the aside */
+aside:nth-child(2) {
+    background-image: url(../images/sep.png), url(../images/sep.png);
+    background-repeat: no-repeat no-repeat;
+    background-position: left center, right center;
+}
+/* Third aside style, we juste style the list */
+aside:nth-child(3) ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
