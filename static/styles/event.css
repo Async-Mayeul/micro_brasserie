@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'diner-fattregular';
+    src: url('../fonts/Diner-Fatt-webfont.eot');
+    src: url('../fonts/Diner-Fatt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Diner-Fatt-webfont.woff') format('woff'),
+         url('../fonts/Diner-Fatt-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Base style */
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    line-height: 1.5;
+}
+
+body {
+    overflow: auto;
+}
+
+h1 {
+    height: 1em;
+    position: relative;
+    top: 10%;
+    left: 30%;
+}
+
+h2 {
+    margin-bottom: 5%;
+}
+
+/* Header style */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    background-color: #0e0d0d;
+    font-family: 'diner-fattregular';
+    font-size: 1.5em;
+    height: 5em;
+    width: 100%;
+}
+
+/* Logo style */
+header > img {
+    position: relative;
+    right: 350px;
+    max-width: 100%;
+}
+
+/* menu style */
+nav {
+    align-self: flex-end;
+    width: 50%;
+    height: 1.5em;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+nav > ul > li {
+    margin-right: 5%;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #f4c315;
+}
+
+/* main background style */
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/beers.jpg);
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+    color: ivory;
+}
+
+/* Section event style */
+
+section {
+    align-self: center;
+    width: 50%;
+    font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 5%;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    padding: 5%;
+    display: inherit;
+    flex-direction: column;
+}
+
+img[src="../images/grande_sep.png"] {
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+section:nth-child(odd) {
+    background-color: rgba(50, 49, 50, 0.6);
+}
