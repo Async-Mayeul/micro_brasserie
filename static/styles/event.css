@@ -21,15 +21,14 @@ body {
     overflow: auto;
 }
 
-h1 {
-    height: 1em;
-    position: relative;
-    top: 10%;
-    left: 30%;
-}
-
 h2 {
     margin-bottom: 5%;
+}
+
+h4 {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    text-align: center;
 }
 
 /* Header style */
@@ -47,15 +46,24 @@ header {
 
 /* Logo style */
 header > img {
-    position: relative;
-    right: 350px;
     max-width: 100%;
 }
 
 /* menu style */
-nav {
-    align-self: flex-end;
+#navigator {
+    align-self: center;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    height: 1.2em;
+    align-self: center;
+}
+
+#navigator > nav {
+    width: 100%;
     height: 1.5em;
 }
 
@@ -67,7 +75,7 @@ nav > ul {
 }
 
 nav > ul > li {
-    margin-right: 5%;
+    margin-right: auto;
     letter-spacing: 2px;
 }
 
@@ -81,7 +89,6 @@ nav a:hover {
 }
 
 /* main background style */
-
 main {
     display: flex;
     flex-direction: column;
@@ -92,13 +99,12 @@ main {
 }
 
 /* Section event style */
-
 section {
     align-self: center;
-    width: 50%;
+    width: 80vw;
     font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 5%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     padding: 1%;
     display: flex;
     justify-content: center;
@@ -106,7 +112,7 @@ section {
 }
 
 article {
-    padding: 5%;
+    padding: 1%;
     display: inherit;
     flex-direction: column;
 }
@@ -122,7 +128,6 @@ section:nth-child(odd) {
 
 /* Footer Style */
 footer {
-    height: 15vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -138,7 +143,7 @@ aside {
 
 /* List element style */
 aside li {
-    margin-bottom: 3%;
+    margin-bottom: 1%;
 }
 
 /* First aside style 
@@ -149,6 +154,9 @@ aside:nth-child(1) {
     align-items: center;
 }
 
+aside:nth-child(1) ul {
+    margin-bottom: 1%;
+}
 /* Style link when cursor hover link */
 aside:nth-child(1) a:hover {
     border-left: 3px solid rgb(0, 204, 0);
@@ -166,5 +174,5 @@ aside:nth-child(2) {
 aside:nth-child(3) ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
