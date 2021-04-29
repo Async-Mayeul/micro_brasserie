@@ -10,10 +10,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /* Base style */
-html {
-    height: 100%;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -96,43 +92,60 @@ nav a:hover {
     color: #f4c315;
 }
 
-/* main background style */
+/** Main style **/
+
 main {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     background-image: url(../images/beers.jpg);
     background-attachment: fixed;
+    background-size: 100%;
     font-family: 'Roboto', sans-serif;
     color: ivory;
 }
 
-/* Section event style */
-section {
-    align-self: center;
-    width: 80vw;
-    font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    padding: 1%;
+article {
+    padding: 2%;
+    background-color: rgba(14,13,13, 0.6);
+    margin: 2%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-article {
-    padding: 1%;
-    display: inherit;
-    flex-direction: column;
+.description {
+    width: 100%;
+    text-align: left;
 }
 
-img[src="../images/grande_sep.png"] {
-    margin-right: 3%;
-    margin-left: 3%;
+.sep {
+    padding: 2%;
 }
 
-section:nth-child(odd) {
-    background-color: rgba(50, 49, 50, 0.6);
+article:nth-of-type(1) {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+article:nth-of-type(2) {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+article:nth-of-type(3) {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+article:nth-of-type(4) {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.illust {
+    max-width: 100%;
 }
 
 /* Footer Style */
