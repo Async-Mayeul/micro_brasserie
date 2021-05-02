@@ -83,7 +83,7 @@ nav > ul {
 }
 
 nav > ul > li {
-    margin-right: auto;
+    margin: auto;
     letter-spacing: 2px;
 }
 
